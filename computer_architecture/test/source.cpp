@@ -4,13 +4,6 @@
 
 using namespace std;
 
-void print(vector<int> const &input)
-{
-	for (int i = 0; i < input.size(); i++) {
-		std::cout << input.at(i) << ' ';
-	}
-}
-
 int getCount(int n, int s)
 {
    int i = 0;
@@ -34,17 +27,6 @@ int toDecimal(int n, int from)
 
    return sum;
 }
-//
-//int revers(vector<int> arr)
-//{
-//    int r;
-//    for (std::vector<int>::it = arr.rbegin(); it != arr.rend(); ++it)
-//    {
-//        r += *it + '0';
-//    }
-//
-//    return r;
-//}
 
 string revers(vector<int> &arr)
 {
