@@ -28,17 +28,6 @@ int toDecimal(int n, int from)
    return sum;
 }
 
-string revers(vector<int> &arr)
-{
-    string r;
-    for (std::vector<int>::reverse_iterator  it = arr.rbegin(); it != arr.rend(); ++it)
-    {
-        r += *it + '0';
-    }
-
-    return r;
-}
-
 vector<int> transform(int n, int to)
 {
     vector<int> arr;
@@ -65,9 +54,12 @@ int main()
 
     int decimal = toDecimal(n, from);
     vector<int> arr = transform(decimal, to);
-    string result = revers(arr);
-    int d = result - '0';
 
-    cout << "In Decimal: " << decimal;
-    cout << "NEW: " << result;
+    cout << "Result in " <<  to << " number system: ";
+    for (std::vector<int>::reverse_iterator it = arr.rbegin(); it != arr.rend(); ++it)
+    {
+       cout << *it;
+    }
+
+    return 0;
 }
