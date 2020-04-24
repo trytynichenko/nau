@@ -59,25 +59,3 @@ int main()
 
     return 0;
 }
-
-/*
-
-#include <exception>
-#include <iostream>
-#include <string>
-
-
-
-int main()
-{
-    try
-    {
-        throw Exception("Something went wrong...\n");
-    }
-    catch(Exception& e)
-    {
-        std::cout << e.what() << std::endl;
-    }
-}
-
-*/
